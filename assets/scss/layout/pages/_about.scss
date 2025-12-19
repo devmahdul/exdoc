@@ -1,0 +1,42 @@
+@use '../../utils' as *;
+
+.#{$theme-prefix}-about {
+    &-shape {
+        & img {
+            filter: blur(47px);
+        }
+        &-01 {
+            left: 5%;
+            top: 31%;
+        }
+        &-02 {
+            right: -6%;
+            top: 5%;
+        }
+        &-03 {
+            left: 39%;
+            bottom: 27%;
+        }
+    }
+    &-video {
+        &-icon {
+            & a {
+                width: 80px;
+                height: 80px;
+                display: inline-block;
+                border: 1px solid var(--mh-body-color);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &-info {
+            & h4 {
+                color: var(--mh-body-color);
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}

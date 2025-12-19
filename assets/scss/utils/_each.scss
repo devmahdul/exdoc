@@ -1,0 +1,10 @@
+$radius: (
+    15: 20px,
+    20: 20px,
+);
+
+@each $name, $value in $radius {
+    .br-#{$name} {
+        border-radius: $value;
+    }
+}

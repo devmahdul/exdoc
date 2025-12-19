@@ -1,0 +1,47 @@
+@use '../../utils' as *;
+
+
+.#{$theme-prefix}-newsletter {
+    &-margin {
+        margin-top: -115px;
+    }
+    &-bg {
+        padding: 70px 80px;
+    }
+    &-box {
+        & form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        & input {
+            color: var(--mh-white-color);
+            border-color: var(--mh-white-color);
+            padding-right: 45px;
+            &:focus {
+                color: var(--mh-white-color);
+            }
+            @include mh-placeholder {
+                color: var(--mh-white-color);
+            }
+        }
+    }
+    &-back {
+        font-size: 100px;
+        color: var(--mh-white-color);
+        left: 20%;
+        bottom: -35px;
+        line-height: 1;
+        opacity: .1;
+    }
+    &-input {
+        width: calc(100% - 210px);
+        & span {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

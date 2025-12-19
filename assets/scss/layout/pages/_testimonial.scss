@@ -1,0 +1,58 @@
+@use '../../utils' as *;
+
+.#{$theme-prefix}-testimonial {
+    &-shape {
+        &-01 {
+            left: 0;
+            top: 20%;
+        }
+        &-02 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-03 {
+            right: 0;
+            top: 5%;
+        }
+    }
+    &-desc {
+        font-size: 100px;
+        line-height: 1.2;
+    }
+    &-author {
+        &-name {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &-desig {
+            & span {
+                width: 60px;
+                height: 1px;
+                background-color: var(--mh-gray-color);
+                display: inline-block;
+                transform: translateY(-5px);
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+// slider button 
+.#{$theme-prefix}-test-arrow {
+    font-size: 52px;
+    position: absolute;
+    left: -100px;
+    top: 32%;
+    display: inline-flex;
+    &-prev {
+        transform: rotate(180deg);
+    }
+    &-next {
+        left: auto;
+        right: -100px;
+    }
+    &:hover {
+        color: var(--mh-primary-color);
+    }
+}

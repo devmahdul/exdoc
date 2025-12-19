@@ -1,0 +1,16 @@
+@use '../utils' as *; 
+
+.#{$theme-prefix}-section {
+    &-info {
+        & b {
+            color: var(--mh-heading-color);
+            font-weight: 500;
+        }
+    }
+    &-title {
+        line-height: 1.17;
+        &-white {
+            color: var(--mh-white-color);
+        }
+    }
+}

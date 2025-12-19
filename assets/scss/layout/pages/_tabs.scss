@@ -1,0 +1,21 @@
+@use '../../utils' as *;
+
+.#{$theme-prefix}-project-tab {
+    & button {
+        color: var(--mh-white-color);
+        display: block;
+        font-size: 100px;
+        font-family: var(--mh-heading-font);
+        line-height: 1.2;
+        border-bottom: 1px solid #2f446b;
+        padding: 10px 100px;
+        padding-right: 35px;
+        &.active {
+            color: var(--mh-primary-color-2);
+            border-color: var(--mh-primary-color-2);
+        }
+    }
+    &-thumb {
+        padding-left: 85px;
+    }
+}

@@ -1,0 +1,8 @@
+@use '../../utils' as *; 
+
+.#{$theme-prefix}-contact {
+    &-title {
+        font-size: 100px;
+        line-height: 1.2;
+    }
+}

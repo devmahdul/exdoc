@@ -1,0 +1,51 @@
+@use '../../utils' as *;
+
+.#{$theme-prefix}services {
+    border: 1px solid var(--mh-gray-color);
+    padding: 50px 40px;
+    margin-right: -1px;
+    @include mh-transition();
+    &__icon {
+        & span {
+            font-size: 92px;
+            color: var(--mh-dblue-color);
+            display: inline-flex;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 40px;
+        @include mh-transition();
+        &:hover {
+            color: var(--mh-primary-color);
+        }
+    }
+    &__list {
+        & ul {
+            list-style: none;
+            & li {
+                margin-bottom: 10px;
+                &:before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: var(--mh-gray-color);
+                    border-radius: 50%;
+                    display: inline-block;
+                    transform: translateY(-1px);
+                    margin-right: 8px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &:hover {
+        background-color: var(--mh-creamy-color);
+        & .mh-btn-big {
+                background-color: var(--mh-primary-color);
+                color: var(--mh-white-color);
+        }
+    }
+}

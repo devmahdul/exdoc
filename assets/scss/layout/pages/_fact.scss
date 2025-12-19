@@ -1,0 +1,28 @@
+@use '../../utils' as *; 
+
+.#{$theme-prefix}fact {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__icon {
+        & span {
+            font-size: 110px;
+            display: inline-flex;
+            color: var(--mh-primary-color-2);
+        }
+    }
+    &__title {
+        color: var(--mh-white-color);
+        opacity: .5;
+    }
+    &__text {
+        & span {
+            font-size: 100px;
+            color: var(--mh-white-color);
+            line-height: 1.2;
+            font-family: var(--mh-heading-font);
+        }
+    }
+}

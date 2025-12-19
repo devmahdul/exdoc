@@ -1,0 +1,25 @@
+@use '../../utils' as *;
+
+.#{$theme-prefix}blog {
+    &__meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        & span {
+            line-height: 28px;
+        }
+        & cite {
+            width: 2px;
+            height: 16px;
+            background-color: var(--mh-gray-color);
+            display: inline-block;
+            margin: 0 14px;
+        }
+    }
+    &__title {
+        @include mh-transition();
+        &:hover {
+            color: var(--mh-primary-color);
+        }
+    }
+}
