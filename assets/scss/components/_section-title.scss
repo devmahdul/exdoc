@@ -6,11 +6,35 @@
             color: var(--mh-heading-color);
             font-weight: 500;
         }
+        & p {
+            & br {
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+        }
     }
     &-title {
         line-height: 1.17;
+        font-weight: 700;
+        @media #{$lg} {
+            font-size: 52px;
+            line-height: 1.1;
+        }
+        @media #{$md,$xs} {
+            font-size: 38px;
+            line-height: 1.1;
+        }
+        @media #{$sm} {
+            font-size: 48px;
+        }
         &-white {
             color: var(--mh-white-color);
+        }
+        & br {
+            @media #{$xs} {
+                display: none;
+            }
         }
     }
 }

@@ -4,5 +4,12 @@
     &-title {
         font-size: 100px;
         line-height: 1.2;
+        @media #{$xl} {
+            font-size: 85px;
+            line-height: 1.1;
+        }
+        @media #{$xs} {
+            font-size: 70px;
+        }
     }
 }

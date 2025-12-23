@@ -6,6 +6,11 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    &__cols {
+        @media #{$md} {
+            width: 50%;
+        }
+    }
     &__icon {
         & span {
             font-size: 110px;

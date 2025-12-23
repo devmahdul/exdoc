@@ -24,6 +24,9 @@
 }
 
 .#{$theme-prefix}team {
+    &__info {
+        margin-left: 0;
+    }
     &__title {
         @include mh-transition();
         &:hover {

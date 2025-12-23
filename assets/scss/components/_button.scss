@@ -87,6 +87,9 @@
         opacity: .3;
         padding: 51px 74px;
         border-radius: 50%;
+        @media #{$xs} {
+            font-size: 42px;
+        }
         &:hover {
             background-color: var(--mh-primary-color);
             color: var(--mh-white-color);

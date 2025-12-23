@@ -3,6 +3,9 @@
 .#{$theme-prefix}-main {
     &-menu {
         padding-left: 42px;
+        @media #{$xl} {
+            padding-left: 10px;
+        }
         & nav {
             & ul {
                 list-style: none;
@@ -10,12 +13,20 @@
                     display: inline-block;
                     position: relative;
                     margin-right: 38px;
-                    &:last-child {
-                        margin-right: 0;
+                    @media #{$xxl} {
+                        margin-right: 28px;
+                    }
+                    @media #{$xl} {
+                        margin-right: 20px;
                     }
                     &:hover {
                         & a {
                             color: var(--mh-primary-color-2);
+                            text-transform: capitalize;
+                            &:before {
+                                opacity: 1;
+                                top: 0;
+                            }
                         }
                         & > .sub-menu {
                             opacity: 1;
@@ -31,6 +42,18 @@
                         display: inline-block;
                         padding: 36px 0;
                         font-family: var(--mh-heading-font);
+                        position: relative;
+                        &:before {
+                            content: "\f121";
+                            position: absolute;
+                            font-family: var(--mh-flaticon-font);
+                            color: var(--mh-primary-color-2);
+                            font-size: 40px;
+                            top: -5px;
+                            left: 25px;
+                            opacity: 0;
+                            @include mh-transition();
+                        }
                     }
                     & .sub-menu {
                         position: absolute;
@@ -55,6 +78,9 @@
                                 color: #000;
                                 display: block;
                                 padding: 4px 25px;
+                                &:before {
+                                    display: none;
+                                }
                             }
                             & .sub-menu {
                                 left: 102%;

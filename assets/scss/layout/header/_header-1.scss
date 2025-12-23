@@ -1,6 +1,14 @@
 @use '../../utils' as *;
 
 .#{$theme-prefix}-header {
+    &-area {
+        @media #{$xl,$lg,$md} {
+            padding-left: 30px;
+        }
+        @media #{$xs} {
+            padding-left: 15px;
+        }
+    }
     &-border {
         border-bottom: 1px solid #2F323B;
     }
@@ -22,6 +30,9 @@
         padding-right: 50px;
         border-left: 1px solid #2F323B;
         height: 100%;
+        @media #{$xl} {
+            padding-right: 30px;
+        }
         &-icon{
             margin-right: 14px;
             & i {

@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .#{$theme-prefix}blog {
+    &__content {
+        @media #{$xl,$lg,$md,$xs} {
+            padding-left: 0;
+        }
+    }
     &__meta {
         display: flex;
         align-items: center;
@@ -18,6 +23,9 @@
     }
     &__title {
         @include mh-transition();
+        @media #{$md} {
+            font-size: 26px;
+        }
         &:hover {
             color: var(--mh-primary-color);
         }
